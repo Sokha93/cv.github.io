@@ -1,0 +1,353 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: gray;
+    font-family: 'Roboto Slab', serif;
+    /* list-style: none; */
+}
+#moveit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: x-large;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: 50px;
+    color: rgb(65, 9, 9);
+}
+#main-block{
+    background: rgb(97, 100, 100);
+    border: 0 solid black;
+    bottom: 50px;
+    box-shadow: 1px 5px 20px 4px rgba(0, 0, 0, 0.7);
+    width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "blk pht bio"
+                         "blk man man"
+                         "blk ftr ftr";
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    grid-gap: 1px;
+}
+#block{
+    grid-area: blk;
+    background: rgb(44, 42, 42);
+}
+#me {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#me h2{
+    margin: 0;
+    text-align: center;
+    color: wheat;
+    text-transform: capitalize;
+    opacity: 0.8;
+    font-size: medium;
+    letter-spacing: 1.5px;
+}
+#lists{
+    padding-top: 20px;
+    border-bottom: 0.5px solid rgb(158, 155, 155);
+}
+#link{
+    border-top: 0.5px solid rgb(158, 155, 155);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: wheat;
+    height: 30px;
+    font-size: small;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+button{
+    background: rgb(44, 42, 42);
+    border: 0 solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    height: 30px;
+    font-size: small;
+    text-transform: uppercase;
+    opacity: 0.9;
+    font-family: 'Roboto Slab', serif;
+    border-top: 0.5px solid rgb(158, 155, 155);
+    width: 100%;
+}
+button:hover{
+    background: rgb(99, 98, 98);
+    border-right: 4px solid rgb(23, 211, 245);
+    color: white;
+}
+#link:hover{
+    background: rgb(99, 98, 98);
+    border-right: 4px solid rgb(23, 211, 245);
+    color: white;
+}
+
+#links{
+    border-top: 0.5px solid rgb(158, 155, 155);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: wheat;
+    height: 30px;
+    font-size: small;
+    text-transform: uppercase;
+    opacity: 0.9;
+    
+    /* display: none; */
+}
+#lanka{
+    display: none;
+}
+
+#links:hover{
+    background: rgb(99, 98, 98);
+    border-right: 3px solid rgb(23, 211, 245);
+    color: white;
+}
+#sm{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+    padding-top: 20px;
+}
+#icon{
+    /* border-radius: 50%; */
+    transition: 0.3s;
+    border-radius: 50%;
+}
+#icon:hover{
+    transform: rotate(359deg);
+    /* transition: 0.5; */
+    border: 1px solid #fefefe;
+    opacity: 0.7;
+}
+/*  */
+#photo{
+    grid-area: pht;
+    width: "410px";
+    height:"415px";
+    
+}
+
+
+/*  */
+#name h1{
+    color: wheat;
+    letter-spacing: 3px;
+    opacity: 0.7;
+}
+#name h4{
+    text-transform: uppercase;
+    font-size: small;
+    color: rgb(139, 139, 139);
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+#name p{
+    color: wheat;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    margin-top: 0;
+}
+/*  */
+#bio{
+    grid-area: bio;
+    background: rgb(42, 42, 48);
+    padding: 20px;
+}
+#contact{
+    color: rgb(139, 139, 139);
+    letter-spacing: 1px;
+    opacity: 0.8;
+    margin-top: 0;
+    gap: 2px;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: underline;
+    padding-left: 5px;
+}
+#contac{
+    padding-right: 5px;
+}
+
+
+
+#h1{
+    margin: 0 auto;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+}
+h4{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+#main{
+    grid-area: man;
+    background: url(../images/sokah.jpg);
+}
+main div h2{
+    /* display: flex;
+    justify-content: flex-end; */
+    margin: 0;
+    float: right;
+    width: 300px;
+    color: rgb(3, 3, 3);
+    opacity: 0.7;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* #paragraph2{
+    display: flex;
+    justify-content: flex-start;
+    width: 200px;
+} */
+
+#footer{
+    margin: 0;
+    grid-area: ftr;
+    background: rgb(61, 57, 53);
+    padding: 10px;
+    color: wheat;
+    opacity: 0.8;
+}
+#what{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+#design{
+    width: 380px;
+}
+#design2{
+    width: 380px;
+    padding-left: 15px;
+}
+#dees{
+    border-top: 1px solid rgb(23, 211, 245);
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: x-large;
+    opacity: 0.8;
+}
+.end a{
+    text-decoration: none;
+    color: rgb(75, 73, 73);
+}
+.end a:hover{
+    color: rgb(184, 186, 187);
+}
+
+#last-point{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+.main-modal{
+    z-index: 1;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+#modal-content{
+    color: #fefefe;
+    letter-spacing: 1.5px;
+    opacity: 0.8;
+    margin: 10% auto;
+    padding: 20px;
+    width: 45%;
+    background-color: rgba(56, 86, 105, 0.8);
+    border: 1px solid rgb(116, 223, 255);
+    border-radius: 10px;
+}
+.close{
+    color: #aaa;
+    float: right;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px){
+    #main-block{
+        width: 410px;
+        display: flex;
+        flex-direction: column;
+    }
+    #photo{
+       width:80%;
+       position: static;
+
+    }
+    #block{
+        width: 410px;
+    }
+    #sm{
+        display: flex;
+        flex-direction: row;
+    }
+    #bio{
+        width: 90%;
+        position: relative;
+    }
+    #summary{
+        width: 400px;
+    }
+    #main h2{
+        opacity: 1;
+        float: left;
+        color: wheat;
+        opacity: 0.6;
+    }
+
+    #foot{
+        width: 400px
+    }
+};
